@@ -1,14 +1,17 @@
 ---
 import Card from "../components/Card.astro";
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+console.log(Astro.params);
+
 ---
 
 <Layout title="Aiqueamor">
-	<main class="grid md:grid-cols-2 gap-4 justify-center mx-auto my-0 container">
+  <main
+    class="grid md:grid-cols-2 gap-3 mt-20 place-content-center place-items-center"
+  >
     <Card title="Produto 1" href="/link" value="120,00" />
     <Card title="Produto 2" href="/link" value="100,00" />
     <Card title="Produto 3" href="/link" value="120,00" />
     <Card title="Produto 4" href="/link" value="20,00" />
-
-	</main>
+  </main>
 </Layout>
